@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Khu vườn hoa nhiều màu">
+  <rect width="640" height="280" fill="#a8dadc"/>
+  <rect y="280" width="640" height="200" fill="#2d6a4f"/>
+  <circle cx="88" cy="86" r="48" fill="#ffd166"/>
+  <g stroke="#245501" stroke-width="8" stroke-linecap="round">
+    <path d="M160 430V330"/>
+    <path d="M300 430V320"/>
+    <path d="M470 430V335"/>
+  </g>
+  <g>
+    <circle cx="160" cy="318" r="24" fill="#e63946"/>
+    <circle cx="132" cy="330" r="24" fill="#f77f00"/>
+    <circle cx="188" cy="330" r="24" fill="#ffba08"/>
+    <circle cx="160" cy="356" r="24" fill="#9b5de5"/>
+    <circle cx="160" cy="334" r="14" fill="#fff3b0"/>
+  </g>
+  <g>
+    <circle cx="300" cy="305" r="24" fill="#4361ee"/>
+    <circle cx="272" cy="318" r="24" fill="#4cc9f0"/>
+    <circle cx="328" cy="318" r="24" fill="#7209b7"/>
+    <circle cx="300" cy="345" r="24" fill="#f72585"/>
+    <circle cx="300" cy="323" r="14" fill="#fff3b0"/>
+  </g>
+  <g>
+    <circle cx="470" cy="322" r="24" fill="#ff006e"/>
+    <circle cx="442" cy="334" r="24" fill="#fb5607"/>
+    <circle cx="498" cy="334" r="24" fill="#ffbe0b"/>
+    <circle cx="470" cy="362" r="24" fill="#8338ec"/>
+    <circle cx="470" cy="340" r="14" fill="#fff3b0"/>
+  </g>
+</svg>

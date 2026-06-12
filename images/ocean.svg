@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Mặt biển xanh yên bình">
+  <rect width="640" height="260" fill="#90e0ef"/>
+  <rect y="260" width="640" height="220" fill="#0077b6"/>
+  <circle cx="120" cy="90" r="54" fill="#ffd166"/>
+  <path d="M0 322c80-28 146 28 226 0s140-28 224 0 126 28 190 0v158H0Z" fill="#0096c7"/>
+  <path d="M0 380c72-22 146 22 218 0s150-22 226 0 128 22 196 0v100H0Z" fill="#48cae4"/>
+  <path d="M450 236h92l-46-62Z" fill="#ffffff"/>
+  <path d="M496 174v80" stroke="#2b2d42" stroke-width="8"/>
+</svg>

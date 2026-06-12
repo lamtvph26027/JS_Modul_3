@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thư viện ảnh tương tác</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="addTabFocus()">
+  <main class="page">
+    <h1>Thư viện ảnh tương tác</h1>
+
+    <div id="image" aria-live="polite">
+      Di chuột qua một hình ảnh bên dưới để hiển thị ở đây.
+    </div>
+
+    <section class="gallery" aria-label="Danh sách ảnh xem trước">
+      <img
+        class="preview"
+        src="images/mountain.svg"
+        alt="Núi xanh lúc bình minh"
+        onmouseover="upDate(this)"
+        onmouseleave="unDo()"
+        onfocus="upDate(this)"
+        onblur="unDo()"
+      >
+      <img
+        class="preview"
+        src="images/forest.svg"
+        alt="Con đường nhỏ trong rừng"
+        onmouseover="upDate(this)"
+        onmouseleave="unDo()"
+        onfocus="upDate(this)"
+        onblur="unDo()"
+      >
+      <img
+        class="preview"
+        src="images/ocean.svg"
+        alt="Mặt biển xanh yên bình"
+        onmouseover="upDate(this)"
+        onmouseleave="unDo()"
+        onfocus="upDate(this)"
+        onblur="unDo()"
+      >
+      <img
+        class="preview"
+        src="images/city.svg"
+        alt="Thành phố sáng đèn về đêm"
+        onmouseover="upDate(this)"
+        onmouseleave="unDo()"
+        onfocus="upDate(this)"
+        onblur="unDo()"
+      >
+      <img
+        class="preview"
+        src="images/desert.svg"
+        alt="Sa mạc với mặt trời lặn"
+        onmouseover="upDate(this)"
+        onmouseleave="unDo()"
+        onfocus="upDate(this)"
+        onblur="unDo()"
+      >
+      <img
+        class="preview"
+        src="images/garden.svg"
+        alt="Khu vườn hoa nhiều màu"
+        onmouseover="upDate(this)"
+        onmouseleave="unDo()"
+        onfocus="upDate(this)"
+        onblur="unDo()"
+      >
+    </section>
+  </main>
+
+  <script src="js/javascript.js"></script>
+</body>
+</html>

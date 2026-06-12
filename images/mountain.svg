@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Núi xanh lúc bình minh">
+  <rect width="640" height="480" fill="#8ecae6"/>
+  <circle cx="510" cy="110" r="64" fill="#ffb703"/>
+  <path d="M0 480 190 185l96 145 88-116 266 266Z" fill="#2364aa"/>
+  <path d="M120 480 294 238l126 166 74-94 146 170Z" fill="#163b59"/>
+  <path d="M190 185 236 256h-92Z" fill="#f8f9fa"/>
+  <path d="M294 238 338 296h-82Z" fill="#f8f9fa"/>
+</svg>
