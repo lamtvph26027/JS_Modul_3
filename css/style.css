@@ -44,8 +44,9 @@ h1 {
 }
 
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 16px;
 }
 
@@ -68,19 +69,15 @@ h1 {
   transform: translateY(-3px);
 }
 
-@media (max-width: 720px) {
-  #image {
-    min-height: 260px;
-    font-size: 20px;
-  }
-
-  .gallery {
-    grid-template-columns: repeat(2, 1fr);
+@media (min-width: 772px) {
+  .preview {
+    width: 45%;
+    max-height: 30vh;
   }
 }
 
-@media (max-width: 460px) {
-  .gallery {
-    grid-template-columns: 1fr;
+@media (min-width: 998px) {
+  .preview {
+    width: 30%;
   }
 }
