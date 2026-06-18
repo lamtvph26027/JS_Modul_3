@@ -3,72 +3,99 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thư viện ảnh tương tác</title>
+  <title>Thu vien anh tuong tac</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body onload="addTabFocus()">
   <main class="page">
-    <h1>Thư viện ảnh tương tác</h1>
+    <h1>Thu vien anh tuong tac</h1>
+
+    <p class="intro">
+      Chon mot khung anh bang chuot hoac ban phim de xem anh lon va doc mo ta ngan ve tung khung canh.
+    </p>
 
     <div id="image" aria-live="polite">
-      Di chuột qua một hình ảnh bên dưới để hiển thị ở đây.
+      Dua chuot hoac tab den mot hinh anh ben duoi de hien thi o day.
     </div>
 
-    <section class="gallery" aria-label="Danh sách ảnh xem trước">
-      <img
-        class="preview"
-        src="images/mountain.svg"
-        alt="Núi xanh lúc bình minh"
-        onmouseover="upDate(this)"
-        onmouseleave="unDo()"
-        onfocus="upDate(this)"
-        onblur="unDo()"
-      >
-      <img
-        class="preview"
-        src="images/forest.svg"
-        alt="Con đường nhỏ trong rừng"
-        onmouseover="upDate(this)"
-        onmouseleave="unDo()"
-        onfocus="upDate(this)"
-        onblur="unDo()"
-      >
-      <img
-        class="preview"
-        src="images/ocean.svg"
-        alt="Mặt biển xanh yên bình"
-        onmouseover="upDate(this)"
-        onmouseleave="unDo()"
-        onfocus="upDate(this)"
-        onblur="unDo()"
-      >
-      <img
-        class="preview"
-        src="images/city.svg"
-        alt="Thành phố sáng đèn về đêm"
-        onmouseover="upDate(this)"
-        onmouseleave="unDo()"
-        onfocus="upDate(this)"
-        onblur="unDo()"
-      >
-      <img
-        class="preview"
-        src="images/desert.svg"
-        alt="Sa mạc với mặt trời lặn"
-        onmouseover="upDate(this)"
-        onmouseleave="unDo()"
-        onfocus="upDate(this)"
-        onblur="unDo()"
-      >
-      <img
-        class="preview"
-        src="images/garden.svg"
-        alt="Khu vườn hoa nhiều màu"
-        onmouseover="upDate(this)"
-        onmouseleave="unDo()"
-        onfocus="upDate(this)"
-        onblur="unDo()"
-      >
+    <section class="gallery" aria-label="Danh sach anh xem truoc">
+      <figure>
+        <img
+          class="preview"
+          src="images/mountain.svg"
+          alt="Nui xanh trong anh binh minh"
+          onmouseover="upDate(this)"
+          onmouseleave="unDo()"
+          onfocus="upDate(this)"
+          onblur="unDo()"
+        >
+        <figcaption>Nui xanh vao buoi sang</figcaption>
+      </figure>
+
+      <figure>
+        <img
+          class="preview"
+          src="images/forest.svg"
+          alt="Con duong nho di qua khu rung xanh"
+          onmouseover="upDate(this)"
+          onmouseleave="unDo()"
+          onfocus="upDate(this)"
+          onblur="unDo()"
+        >
+        <figcaption>Loi mon giua rung</figcaption>
+      </figure>
+
+      <figure>
+        <img
+          class="preview"
+          src="images/ocean.svg"
+          alt="Mat bien xanh yen binh duoi bau troi sang"
+          onmouseover="upDate(this)"
+          onmouseleave="unDo()"
+          onfocus="upDate(this)"
+          onblur="unDo()"
+        >
+        <figcaption>Bien xanh yen binh</figcaption>
+      </figure>
+
+      <figure>
+        <img
+          class="preview"
+          src="images/city.svg"
+          alt="Thanh pho sang den vao buoi toi"
+          onmouseover="upDate(this)"
+          onmouseleave="unDo()"
+          onfocus="upDate(this)"
+          onblur="unDo()"
+        >
+        <figcaption>Thanh pho ve dem</figcaption>
+      </figure>
+
+      <figure>
+        <img
+          class="preview"
+          src="images/desert.svg"
+          alt="Sa mac vang voi mat troi dang lan"
+          onmouseover="upDate(this)"
+          onmouseleave="unDo()"
+          onfocus="upDate(this)"
+          onblur="unDo()"
+        >
+        <figcaption>Sa mac luc hoang hon</figcaption>
+      </figure>
+
+      <figure>
+        <img
+          class="preview"
+          src="images/garden.svg"
+          alt="Khu vuon hoa nhieu mau sac"
+          onmouseover="upDate(this)"
+          onmouseleave="unDo()"
+          onfocus="upDate(this)"
+          onblur="unDo()"
+        >
+        <figcaption>Khu vuon day mau sac</figcaption>
+      </figure>
     </section>
   </main>
 

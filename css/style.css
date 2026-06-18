@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -17,13 +21,19 @@ body {
 }
 
 h1 {
-  margin: 0 0 20px;
+  margin: 0 0 16px;
   font-size: 32px;
   text-align: center;
 }
 
+.intro {
+  margin: 0 auto 20px;
+  line-height: 1.5;
+  text-align: center;
+}
+
 #image {
-  min-height: 360px;
+  min-height: 320px;
   border: 3px solid #1f6f8b;
   border-radius: 8px;
   display: flex;
@@ -44,40 +54,107 @@ h1 {
 }
 
 .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 16px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+figure {
+  margin: 0;
+  border: 3px solid #1f6f8b;
+  border-radius: 8px;
+  overflow: hidden;
+  color: #17202a;
+  background-color: #ffffff;
+  box-shadow: 0 6px 16px rgba(23, 32, 42, 0.18);
 }
 
 .preview {
+  display: block;
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
-  border: 3px solid #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 6px 16px rgba(23, 32, 42, 0.18);
   cursor: pointer;
-  transition: transform 160ms ease, border-color 160ms ease, outline-color 160ms ease;
+  transition: transform 160ms ease, filter 160ms ease, outline-color 160ms ease;
+}
+
+figcaption {
+  padding: 12px;
+  font-weight: 700;
+  text-align: center;
 }
 
 .preview:hover,
 .preview:focus {
-  border-color: #d35400;
   outline: 3px solid #163b59;
-  outline-offset: 3px;
-  transform: translateY(-3px);
+  outline-offset: -6px;
+  filter: saturate(1.2);
+  transform: scale(1.02);
 }
 
 @media (min-width: 772px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  figure {
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+  }
+
+  figure:last-child {
+    grid-column: 1 / -1;
+  }
+
   .preview {
-    width: 45%;
-    max-height: 30vh;
+    aspect-ratio: 3 / 2;
   }
 }
 
-@media (min-width: 998px) {
+@media (min-width: 992px) {
+  figure {
+    border-radius: 0;
+    aspect-ratio: auto;
+  }
+
+  figure:last-child {
+    grid-column: auto;
+  }
+
+  figure:nth-child(3n) {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
   .preview {
-    width: 30%;
+    transition: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #f7f4d6;
+    background: #121820;
+  }
+
+  figure {
+    color: #ffe680;
+    background-color: #26313d;
+    border-color: #000000;
+  }
+
+  #image {
+    border-color: #000000;
+    background-color: #1f2933;
+  }
+
+  .preview:hover,
+  .preview:focus {
+    outline-color: #ffe680;
   }
 }
